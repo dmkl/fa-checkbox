@@ -1,0 +1,24 @@
+input[type=checkbox], input[type=radio] {
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before, input[type=radio] + label:before {
+  font-family: inherit;
+  width: 0;
+}
+
+input[type=checkbox] + label:before {
+  content: "";
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "";
+}
+
+input[type=radio] + label:before {
+  content: "";
+}
+
+input[type=radio]:checked + label:before {
+  content: "";
+}

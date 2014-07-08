@@ -1,0 +1,31 @@
+/*= require font-awesome */
+
+input[type=checkbox], input[type=radio] {
+  display:none;
+}
+
+input[type=checkbox] + label:before, input[type=radio] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1.3em;
+}
+
+input[type=checkbox]:disabled + label:before, input[type=radio]:disabled + label:before {
+  color: #999999;
+}
+
+input[type=checkbox] + label:before {
+  content: "\f096";
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\f046";
+}
+
+input[type=radio] + label:before {
+  content: "\f10c";
+}
+
+input[type=radio]:checked + label:before {
+  content: "\f192";
+}

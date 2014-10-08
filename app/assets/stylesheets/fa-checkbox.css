@@ -1,7 +1,8 @@
 /*= require font-awesome */
 
 input[type=checkbox], input[type=radio] {
-  display:none;
+  opacity: 0;
+  position: absolute;
 }
 
 input[type=checkbox] + label:before, input[type=radio] + label:before {
@@ -12,6 +13,10 @@ input[type=checkbox] + label:before, input[type=radio] + label:before {
 
 input[type=checkbox]:disabled + label:before, input[type=radio]:disabled + label:before {
   color: #999999;
+}
+
+input[type=checkbox]:focus + label:before, input[type=radio]:focus + label:before {
+  transform: scale(1.15);
 }
 
 input[type=checkbox] + label:before {

@@ -1,10 +1,19 @@
 input[type=checkbox], input[type=radio] {
-  display: inline-block;
+  position: inherit;
+  opacity: inherit;
 }
 
 input[type=checkbox] + label:before, input[type=radio] + label:before {
   font-family: inherit;
   width: 0;
+}
+
+input[type=checkbox]:disabled + label:before, input[type=radio]:disabled + label:before {
+  color: inherit;
+}
+
+input[type=checkbox]:focus + label:before, input[type=radio]:focus + label:before {
+  transform: none;
 }
 
 input[type=checkbox] + label:before {

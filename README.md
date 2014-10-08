@@ -38,7 +38,7 @@ And included it to your application layout depending on your conditions. For exa
 
 ```html
 <!--[if lt IE 9]>
-<%= stylesheet_link_tag 'fa-checkbox-revert', media: all %>
+<%= stylesheet_link_tag 'fa-checkbox-revert', media: :all %>
 <!--<![endif]-->
 ```
 
